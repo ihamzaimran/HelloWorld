@@ -1,26 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ff0"
+    android:background="#ffe"
+    android:padding="24dp"
     >
+<EditText
+    android:id="@+id/username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/password"
+    android:hint="usename"
+    android:inputType="textVisiblePassword|textNoSuggestions"
+    />
 
-    <TextView
+    <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content"
-        android:text=" Hi its Hamza. How are you?"
-        android:textSize="24sp"
-        android:paddingBottom="48dp"
-        android:paddingTop="36dp"
-        android:paddingLeft="12dp"
-        android:paddingRight="24dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginBottom="48dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginRight="24dp"
-        android:background="#ffd"
-
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="password"
+        android:inputType="numberPassword"
         />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:id="@+id/login"
+    android:layout_below="@id/password"
+    android:background="@color/colorPrimary"
+    android:textColor="#ffe"
 
-   </LinearLayout>
+    />
+
+   </RelativeLayout>
