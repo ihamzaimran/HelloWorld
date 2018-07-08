@@ -6,40 +6,58 @@
     android:orientation="vertical"
     android:background="#ff0">
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
-    <View
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="#0f0" />
-
-    <View
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="#f00" />
-        </LinearLayout>
-
 <LinearLayout
-android:layout_weight="1"
-android:layout_width="match_parent"
-android:layout_height="0dp">
-    <View
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="#f0f" />
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    >
+   <TextView
+       android:layout_width="168dp"
+       android:layout_height="256dp"
+       android:background="#0f0"
+       android:gravity="bottom|right"
+       android:layout_gravity="bottom"
+       android:text="Text 1!"/>
 
-    <View
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="#0ff" />
+    <TextView
+        android:layout_width="168dp"
+        android:layout_height="256dp"
+        android:background="#f00"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:text="Text 2!" />
+
 </LinearLayout>
 
-    
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="168dp"
+            android:layout_height="256dp"
+            android:background="#0ff"
+            android:gravity="right"
+            android:layout_gravity="top"
+            android:text="Text 3!"
+
+            />
+
+        <TextView
+            android:layout_width="168dp"
+            android:layout_height="256dp"
+            android:background="#f0f"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:text="Text 4!"
+
+            />
+
+    </LinearLayout>
 
    </LinearLayout>
