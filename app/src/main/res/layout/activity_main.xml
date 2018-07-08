@@ -1,63 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#ff0">
+    android:background="#ff0"
 
-<LinearLayout
-    android:gravity="center"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:orientation="horizontal"
     >
-   <TextView
-       android:layout_width="168dp"
-       android:layout_height="256dp"
-       android:background="#0f0"
-       android:gravity="bottom|right"
-       android:layout_gravity="bottom"
-       android:text="Text 1!"/>
 
-    <TextView
-        android:layout_width="168dp"
-        android:layout_height="256dp"
+    <View
+        android:id="@+id/myView1"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:background="#0f0"
+        />
+    <View
+        android:id="@+id/myView2"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_alignParentRight="true"
         android:background="#f00"
-        android:gravity="bottom"
-        android:layout_gravity="bottom"
-        android:text="Text 2!" />
+        />
+    <View
+        android:id="@+id/myView3"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0ff"
+        />
+    <View
+        android:id="@+id/myView4"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#f0f"
+        />
 
-</LinearLayout>
-
-    <LinearLayout
-        android:gravity="center"
+    <View
+        android:layout_toRightOf="@id/myView1"
+        android:layout_toLeftOf="@id/myView2"
+        android:layout_below="@id/myView1"
+        android:layout_above="@id/myView3"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:layout_width="168dp"
-            android:layout_height="256dp"
-            android:background="#0ff"
-            android:gravity="right"
-            android:layout_gravity="top"
-            android:text="Text 3!"
+        android:layout_height="match_parent"
+        android:background="#000"
 
-            />
 
-        <TextView
-            android:layout_width="168dp"
-            android:layout_height="256dp"
-            android:background="#00f"
-            android:layout_gravity="top"
-            android:gravity="top"
-            android:text="Text 4!"
-
-            />
-
-    </LinearLayout>
-
-   </LinearLayout>
+   </RelativeLayout>
